@@ -5,8 +5,8 @@
     "bootloader": "stm32-dfu",
     "diode_direction": "COL2ROW",
     "features": {
-        "bootmagic": false,
-        "command": false,
+        "bootmagic": true,
+        "command": true,
         "console": false,
         "extrakey": true,
         "mousekey": true,
@@ -26,55 +26,55 @@
     "layouts": {
         "LAYOUT": {
             "layout": [
-              {                
+              {
                 "label": "L1",
                 "matrix": [11,12],
                 "x": 0,
                 "y": 0
               },
-              {                
+              {
                 "label": "L2",
                 "matrix": [11,11],
                 "x": 1,
                 "y": 0
               },
-              {                
+              {
                 "label": "L3",
                 "matrix": [11,6],
                 "x": 2,
                 "y": 0
               },
-              {                
+              {
                 "label": "F13",
                 "matrix": [11,5],
                 "x": 5.25,
                 "y": 0
               },
-              {                
+              {
                 "label": "F14",
                 "matrix": [11,4],
                 "x": 6.25,
                 "y": 0
               },
-              {                
+              {
                 "label": "F15",
                 "matrix": [11,3],
                 "x": 7.25,
                 "y": 0
               },
-              {                
+              {
                 "label": "F16",
                 "matrix": [11,2],
                 "x": 8.25,
                 "y": 0
               },
-              {                
+              {
                 "label": "F17",
                 "matrix": [11,1],
                 "x": 9.75,
                 "y": 0
               },
-              {                
+              {
                 "label": "F18",
                 "matrix": [11,0],
                 "x": 10.75,

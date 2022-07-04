@@ -3,18 +3,15 @@
 
 #pragma once
 
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
+#define NO_ACTION_LAYER
+#define NO_ACTION_TAPPING
+#define NO_ACTION_ONESHOT
 
-/* disable debug print */
-//#define NO_DEBUG
+#define BOOTMAGIC_LITE_COLUMN 13
+#define BOOTMAGIC_LITE_ROW 12
+#define ENCODERS_PAD_A { B7 }
+#define ENCODERS_PAD_B { A0 }
+#define ENCODER_RESOLUTION 4
 
-/* disable print */
-//#define NO_PRINT
+#define FORCE_NKRO
 
-/* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT

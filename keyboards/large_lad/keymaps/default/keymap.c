@@ -3,7 +3,7 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      *  ┌───┬───┬───┐         ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┐ ┌───┬───┬───┬───┐
-     *  │   │   │   │         │F13│F14│F15│F16│ │F17│F18│F19│F20│ │F21│F22│F23│F24│ │   │   │   │ │   │   │   │   │  
+     *  │   │   │   │         │F13│F14│F15│F16│ │F17│F18│F19│F20│ │F21│F22│F23│F24│ │   │   │   │ │   │   │   │   │
      *  ├───┼───┼───┤ ┌───┐   ├───┼───┼───┤───┤ ├───┼───┼───┤───┤ ├───┼───┼───┤───┤ ├───┼───┼───┤ ├───┼───┼───┤───┤
      *  │   │   │   │ │Esc│   │F1 │F2 │F3 │F4 │ │F5 │F6 │F7 │F8 │ │F9 │F10│F11│F12│ │PSc│Scr│Pse│ │   │   │   │   │
      *  └───┴───┴───┘ └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┘ └───┴───┴───┴───┘
@@ -30,3 +30,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,KC_NO,KC_NO, KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT, KC_RGUI, KC_APP,  KC_RCTL,    KC_LEFT, KC_DOWN, KC_RGHT,    KC_P0,            KC_PDOT
     )
 };
+
+
+// encoder controls volume by default
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }
+};
+#endif
