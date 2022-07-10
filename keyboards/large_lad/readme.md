@@ -18,4 +18,4 @@ Flashing example for this keyboard:
 
 ## Bootloader
 
-On the blackpill MCU board, hold BOOT and press NRST
+On the blackpill MCU board, hold BOOT and press NRST to enter bootloader mode.
